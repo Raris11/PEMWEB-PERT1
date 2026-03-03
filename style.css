@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body{
+    font-family:inter;
+    background-color: lightblue;
+    padding:100px;
+}
+
+form{
+    background-color: aqua;
+    padding:100px;
+    width:fit-content;
+    margin:auto;
+    border-radius:20px;
+}
+input, select{
+    border-bottom:1px solid red;
+    border: none;
+    background-color: yellow;
+}
+buttton{
+    background-color: green;
+    color:white;
+    border:none;
+    padding:0.5cm 1.5cm;
+    border-radius:4px;
+
+
+}

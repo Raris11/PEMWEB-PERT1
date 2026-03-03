@@ -2,36 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Form Kehadiran Praktikan</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <a href="pert.html">Home</a>
-    <nav>
-    <header>
+    <form action="#" method="post">
         <h1>Form Kehadiran Praktikan</h1>
-    <header>
-    
+        <label for="name">Nama:</label><br>
+        <input type="text" id="name" name="name" placeholder="Masukkan nama" required><br><br>
 
-    <form action="#" method="post" target="_blank">
-        <label for="name">Nama: </label>
-        <input type="text" id="name" name="name" placeholder="masukkan nama"><br>
-        <label for="NPM">NPM: </label>
-        <input type="number" id="NPM" NPM="NPM" placeholder="masukkan NPM"><br>
-        <label for="password">Password: </label>
-        <input type="password" id="password" name="password" placeholder="masukkan password"><br>
-        <label for="kelas">Kelas: </label>
-        <select name="kelas" id="kelas"><br> 
+        <label for="NPM">NPM:</label><br>
+        <input type="number" id="NPM" name="NPM" placeholder="Masukkan NPM" required><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" placeholder="Masukkan password" required><br><br>
+
+        <label for="kelas">Kelas:</label><br>
+        <select name="kelas" id="kelas" required>
+            <option value="">-- Pilih Kelas --</option>
             <option value="Ilmu Komputer">Ilmu Komputer</option>
             <option value="Sistem Informasi">Sistem Informasi</option>
-        </select><br>
-        <label for="Tanggal">Tanggal: </label>
-        <input type="date" id="Tanggal" name="Tanggal"><br>
-        <label for="Waktu">Waktu: </label>
-        <input type="time" id="Waktu" name="Waktu"><br>
-        <input type="submit" value="Submit">
+        </select><br><br>
+
+        <label for="tanggal">Tanggal:</label><br>
+        <input type="date" id="tanggal" name="tanggal" required><br><br>
+
+        <label for="waktu">Waktu:</label><br>
+        <input type="time" id="waktu" name="waktu" required><br><br>
+
+        <input type="submit" value="Submit" style="background-color: green; color: white;">
+
     </form>
-    
+
 </body>
 </html>
