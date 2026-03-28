@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .card {
+            width: 320px;
+            padding: 25px;
+            border-radius: 20px;
+            color: white;
+            background: linear-gradient(160deg, #1f1c2c, #928dab);
+            box-shadow: 0 0 25px rgba(0, 255, 255, 0.3);
+            transition: 0.4s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 40px rgba(0, 255, 255, 0.6);
+        }
+
+        .profile-box {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .profile {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid cyan;
+        }
+
+        .info h2 {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .desc {
+            font-size: 12px;
+            opacity: 0.8;
+            margin: 2px 0 0;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .btn {
+            display: block;
+            width: 85%;
+            padding: 10px;
+            margin: 6px auto;
+            border-radius: 20px;
+            background: linear-gradient(45deg, #00c6ff, #0072ff);
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .btn-group .btn {
+            flex: 1;
+            width: auto;
+            margin: 0;
+            font-size: 12px;
+            padding: 8px;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+            background: linear-gradient(45deg, #ff5900, #3333ff);
+        }
+
+        .connect {
+            background: linear-gradient(45deg, #ff416c, #ff4b2b);
+            width: 85%;
+            margin: 10px auto;
+        }
+
+        .connect:hover {
+            background: linear-gradient(45deg, #3333ff, #ff7300);
+        }
+        .motivation {
+            background: linear-gradient(45deg, rgba(0, 198, 255, 0.15), rgba(114, 137, 255, 0.15));
+            padding: 10px;
+            border-radius: 10px;
+            margin-top: 8px;
+            text-align: center;
+
+            border: 1.5px solid rgba(0, 255, 255, 0.6);
+            box-shadow: 0 0 12px rgba(0, 255, 255, 0.4);
+        }
+
+        .video {
+            width: 100%;
+            height: 150px;
+            border-radius: 12px;
+            margin-top: 10px;
+        }
+
+        .footer {
+            font-size: 12px;
+            margin-top: 10px;
+            opacity: 0.8;
+            text-align: center;
+        }
+
+        h1, h3 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+
+        <h1>My Profile</h1>
+
+        <div class="profile-box">
+            <img src="raris.jpeg" class="profile">
+            <div class="info">
+                <h2>Raris Anggustianto</h2>
+                <p class="desc">Sistem Informasi | 2417052019 | Universitas Lampung</p>
+            </div>
+        </div>
+
+        <div class="btn-group">
+            <a href="https://github.com/Raris11" target="_blank" class="btn">GitHub</a>
+            <a href="https://linkedin.com/" target="_blank" class="btn">LinkedIn</a>
+            <a href="https://instagram.com/raris_11" target="_blank" class="btn">Instagram</a>
+        </div>
+
+        <a href="cv.pdf" target="_blank" class="btn connect">Lihat CV</a>
+
+        <div class="motivation">
+            <p>"Jangan takut mencoba, gagal itu bagiaan dari belajar"</p>
+        </div>
+
+        <iframe 
+            class="video"
+            src="https://www.youtube.com/embed/aPfxom-N1LM"
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
+        <p class="footer">Thank you for visiting!</p>
+    </div>
+    
+</body>
+</html>
